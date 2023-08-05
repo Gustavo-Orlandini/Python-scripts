@@ -1,4 +1,4 @@
-print('\033[1;34;45mHello World!\033[0m')
+print('\033[1;34;45mVamos começar!\033[0m')
 
 # nome=input('Qual é o seu nome?')
 # sobrenome=input('Qual é o seu sobrenome?')
@@ -24,8 +24,25 @@ print('\033[1;34;45mHello World!\033[0m')
 #     print (c)
 # print('Fim.')    
 
+# sum = 0
+# for c in range(0, 4):
+#     n = int(input('Digite um valor: '))
+#     sum += n
+# print('O somatório de todos os valores foi {}'.format(sum))    
+
+# c = 1
+# while c < 10:
+#     print(c)
+#     c += 1
+# print('Fim')    
+
+count = 0
 sum = 0
-for c in range(0, 4):
-    n = int(input('Digite um valor: '))
-    sum += n
-print('O somatório de todos os valores foi {}'.format(sum))    
+while True:
+    number = int(input('Digite um número: '))
+    if number == 999:
+        break
+    count += 1
+    sum += number
+
+print(f'A soma dos {count} valores é {sum}')
