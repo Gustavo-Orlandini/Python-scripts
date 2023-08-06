@@ -1,4 +1,4 @@
-print('\033[1;34;45mVamos começar!\033[0m')
+# print('\033[1;34;45mVamos começar!\033[0m')
 
 # nome=input('Qual é o seu nome?')
 # sobrenome=input('Qual é o seu sobrenome?')
@@ -46,15 +46,34 @@ print('\033[1;34;45mVamos começar!\033[0m')
 #     sum += number
 # print(f'A soma dos {count} valores é {sum}')
 
-lanche = ('Hamburguer', 'Batata_frita', 'Pizza', 'Pudim')
+# lanche = ('Hamburguer', 'Batata_frita', 'Pizza', 'Pudim')
 
-for comida in lanche:
-    print(f'Eu vou comer {comida}')
+# for comida in lanche:
+#     print(f'Eu vou comer {comida}')
 
-for count in range(0, len(lanche)):
-    print(f'eu vou comer {lanche[count]} na posição {count}')    
+# for count in range(0, len(lanche)):
+#     print(f'eu vou comer {lanche[count]} na posição {count}')    
 
-for pos, comida in enumerate(lanche):
-    print(f'Eu vou comer {comida} na posição {pos}')
+# for pos, comida in enumerate(lanche):
+#     print(f'Eu vou comer {comida} na posição {pos}')
 
-print('Comi demais!')    
+# print('Comi demais!')    
+
+galera = list()
+dados = list()
+totmai = totmen = 0
+for c in range(0, 3):
+    dados.append(str(input('Nome: ')))
+    dados.append(int(input('Idade: ')))
+    galera.append(dados[:])
+    dados.clear()
+
+for p in galera:
+    if p[1] >= 21:
+        print(f'{p[0]} é maior de idade')
+        totmai += 1
+    else:
+        print(f'{p[0]} é menor de idade')
+        totmen += 1
+print(f'Temos {totmai} maiores e {totmen} menores de idade')
+
