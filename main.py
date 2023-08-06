@@ -36,13 +36,25 @@ print('\033[1;34;45mVamos começar!\033[0m')
 #     c += 1
 # print('Fim')    
 
-count = 0
-sum = 0
-while True:
-    number = int(input('Digite um número: '))
-    if number == 999:
-        break
-    count += 1
-    sum += number
+# count = 0
+# sum = 0
+# while True:
+#     number = int(input('Digite um número: '))
+#     if number == 999:
+#         break
+#     count += 1
+#     sum += number
+# print(f'A soma dos {count} valores é {sum}')
 
-print(f'A soma dos {count} valores é {sum}')
+lanche = ('Hamburguer', 'Batata_frita', 'Pizza', 'Pudim')
+
+for comida in lanche:
+    print(f'Eu vou comer {comida}')
+
+for count in range(0, len(lanche)):
+    print(f'eu vou comer {lanche[count]} na posição {count}')    
+
+for pos, comida in enumerate(lanche):
+    print(f'Eu vou comer {comida} na posição {pos}')
+
+print('Comi demais!')    
